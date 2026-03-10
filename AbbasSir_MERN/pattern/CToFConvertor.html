@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Checker</title>
+</head>
+<body>
+
+<script>
+    let temp = Number(prompt("Enter temperature"));
+    let msg;
+
+    switch (true) {
+        case isNaN(temp):
+            msg = "Please enter a numeric value";
+            break;
+
+        case temp < 0:
+            msg = "Freezing temperature ❄️";
+            break;
+
+        case temp >= 0 && temp < 20:
+            msg = "Little cold 🧥";
+            break;
+
+        case temp >= 20 && temp < 27:
+            msg = "Normal temperature 🙂";
+            break;
+
+        case temp >= 27 && temp < 35:
+            msg = "Hot ☀️";
+            break;
+
+        default:
+            msg = "Too much hot 🔥";
+    }
+
+    alert(msg);
+    console.log(msg);
+</script>
+
+</body>
+</html>

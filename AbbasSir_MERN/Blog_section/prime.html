@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let a = window.prompt(parseInt("Enter lower range"));
+        let b  = window.prompt(parseInt("Enter upper range"));
+        let c= 0;
+        for(let i=a; i<=b; i++){
+            let count = 0;
+            for(let j=1; j<=i; j++){
+                if(i%j==0){
+                    count++;
+                }
+            }
+            if(count==2){
+                c++;
+                console.log(i);
+            }
+        }
+        console.log("Total prime numbers between" +a+ "and" +b+ "is:"+c);
+    </script>
+</body>
+</html>

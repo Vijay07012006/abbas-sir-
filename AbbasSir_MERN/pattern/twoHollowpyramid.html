@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hollow Damru</title>
+</head>
+<body>
+
+<pre id="out"></pre>
+
+<script>
+    let n = 4;
+    let res = "";
+
+    //  Upper hollow inverted triangle
+    for (let i = n; i >= 1; i--) {
+
+        // left spaces
+        for (let s = 1; s <= n - i; s++) {
+            res += "  ";
+        }
+
+        // stars & hollow space
+        for (let j = 1; j <= 2 * i - 1; j++) {
+            if (j === 1 || j === 2 * i - 1 || i === n) {
+                res += "* ";
+            } else {
+                res += "  ";
+            }
+        }
+        res += "\n";
+    }
+
+    //  Lower hollow triangle
+    for (let i = 2; i <= n; i++) {
+
+        // left spaces
+        for (let s = 1; s <= n - i; s++) {
+            res += "  ";
+        }
+
+        // stars & hollow space
+        for (let j = 1; j <= 2 * i - 1; j++) {
+            if (j === 1 || j === 2 * i - 1 || i === n) {
+                res += "* ";
+            } else {
+                res += "  ";
+            }
+        }
+        res += "\n";
+    }
+
+    document.getElementById("out").textContent = res;
+</script>
+
+</body>
+</html>

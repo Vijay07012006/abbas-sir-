@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Pyramid</title>
+</head>
+<body>
+
+<pre id="output"></pre>
+
+<script>
+    let n = 4;
+    let result = "";
+
+    for (let i = 1; i <= n; i++) {
+
+        // spaces
+        for (let s = 1; s <= n - i; s++) {
+            result += "  ";
+        }
+
+        // left side
+        for (let j = i; j >= 1; j--) {
+            result += j + " ";
+        }
+
+        // right side
+        for (let k = 2; k <= i; k++) {
+            result += k + " ";
+        }
+
+        result += "\n";
+    }
+
+    document.getElementById("output").textContent = result;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple TO-DO</title>
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-10 col-sm-12 mx-auto p-2 mt-5 border rounded bg-white">
+        <h2 class="text-center">TO-DO LIST</h2>
+
+        <form id="todo-form" class="d-flex mb-3" autocomplete="off">
+          <input type="text" id="todo-input" class="form-control me-2" placeholder="Enter a new task" required>
+          <button type="submit" class="btn btn-primary">Add Task</button>
+        </form>
+
+        <ul id="todo-list" class="list-group"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="bootstrap.bundle.js"></script>
+  <script src="todo.js"></script>
+</body>
+</html>

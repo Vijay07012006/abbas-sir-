@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Section</title>
+    <link rel="shortcut icon" href="images/login.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="bg-secondary">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-10 col-sm-12 mx-auto p-0 m-0">
+                        <div class="row  p-4 mt-5">
+                            <div class="blog_button w-100 p-0 m-0 ">
+                                <a class="btn btn-primary fw-bold w-25 CreateBlog" data-bs-toggle="offcanvas"
+                                    href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                                    Create Blog
+                                </a>
+                                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                                    aria-labelledby="offcanvasExampleLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title fw-bold " id="offcanvasExampleLabel">Create Blog</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <div>
+                                            <label for="title">title</label>
+                                            <input type="text " class="form-control" id="title"
+                                                placeholder="Enter Blog Title">
+                                            <br>
+                                            <label for="category">category</label>
+                                            <input type="text " class="form-control" id="category"
+                                                placeholder="Enter Blog Category">
+                                            <br>
+                                            <label for="Tags">Tags</label>
+                                            <input type="text " class="form-control" id="Tags"
+                                                placeholder="Enter Blog Tags">
+                                            <br>
+                                            <label for="Short-Description">Short-Description</label>
+                                            <textarea class="form-control" id="Short-Description" rows="5"
+                                                placeholder="Enter Blog Description...."></textarea>
+                                            <br>
+                                            <label for="Content">Full Content</label>
+                                            <textarea class="form-control" id="content" rows="10"
+                                                placeholder="Write your Full Blog Here...."></textarea>
+
+                                        </div>
+                                        <div class="mt-3 d-flex gap-2 justify-content-end">
+                                            <button class="btn btn-secondary save-blog">Save Blog</button>
+                                            <button class="btn btn-primary update-blog">Update Blog</button>
+                                            <button class="btn btn-danger clear-blog" type="button">
+                                                Clear Blog
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row blog_section p-4">
+                            <!-- Blog Cards Will Be Here -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

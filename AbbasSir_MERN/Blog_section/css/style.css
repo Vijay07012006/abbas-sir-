@@ -1,0 +1,55 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.blog_section{
+    background-color:white;
+    /* margin-top: 100px; */
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.update-blog{
+    transition: 0.3s;
+    display: none;
+}
+.update-blog:hover{
+    background-color: orange;
+    color: white;
+    transform: scale(1.03);
+}
+.save-blog{
+    transition: 0.3s;
+}
+.save-blog:hover{
+    background-color: green;
+    color: white;
+    transform: scale(1.03);
+}
+
+.clear-blog{
+    transition: 0.3s;
+}
+.clear-blog:hover{
+    background-color: red;
+    color: white;
+    transform: scale(1.03);
+}
+.CreateBlog{
+    width:200px!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;    
+}
+.CreateBlog:hover{
+    transform: scale(1.03);
+    background-color: #386d04;
+    color: white;
+}
+.blog-card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s;
+}
+.blog-card:hover{
+    transform: scale(1.03);
+}
