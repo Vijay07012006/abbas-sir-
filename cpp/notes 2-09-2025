@@ -1,0 +1,49 @@
+Operators:-Operators are symbols which are used to perform operations in operands.
+
+Arithmetic Operators:--
+
++   Addition       a+b
+-   subtraction    a-b
+*   Multiplication a*b
+/   division       a/b
+%   modulo         a%b 
+
+Relational operators:relational operator are used to show relation between two operands.
+
+>       greater than                                      a>b
+<       less than                                         a<b
+>=     greater than or equal to                           a>=b
+<=      less than or equal to                             a<=b
+==      equal(lose)(only checks value not type)           a==b
+===     equal(strict)(checks type+value both)             a===b
+!=      not equal to                                      a!=b
+!==         not  losely equal                              a!==b
+!===    not   strict equal                                 a!===b
+
+Assignment operators (=):-
+
+a=b;    //copies value of b to a
+a+=b;   //a=a+b
+a+=1;   //a=a+1
+a-=b;   //a=a-b
+a*=b;   //a=a*b
+a/=b;   //a=a/b
+
+Increment Operator (++):-value increased by one
+
+a++;    //a=a+1
+
+Decrement Operator (--):-value decreased by one
+
+a--:    //a=a-1
+
+Logical Operator:-If you want to combine two or more conditions then you can use logical operators.
+
+AND     &&    (double ampersand) 
+OR      ||     (pipe)
+NOT     !
+
+Ternary Operator (?):-alternative of if-else
+
+syntax:- (condition)?("expression1");("expression2");
+

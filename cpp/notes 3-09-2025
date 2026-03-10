@@ -1,0 +1,115 @@
+Decision control:-Decision controls are used for decision making. In C language there are **following** types of decision controls.
+
+1.If statement
+2.if-else statement
+3.ladder if-else statement 
+4.nested if-else statement 
+5.switch statement
+
+1.IF :- If is a keyword , which works as decision control.We attach a condition with if statement.If given condition is true then **if block** code will be executed otherwise it do nothing.
+
+Syntax:-
+if(condition){
+    //code
+}
+
+2.If-else:-if-else is variation of if statement.We attch a condition with id statement. If given condition is **true** then **if block code** will be  executed and if given condition is **false** then **else block code** will be executed.
+
+Syntax:-
+if(condition){
+    //if block code executed
+}                                                       //this is called if-else constructor
+else{
+    //else block code execute
+}
+
+3.ladder if-else:-If you have many conditions and you want to execute code based on those conditions then you can use ladder if-else.
+
+Syntax:-
+if(condition1){
+    //code1 executed
+}
+else if(conditon2){
+    //code2 executed
+}
+else{
+    //code3
+}
+
+4.Nested If-Else:-if  we use if-else construct in if block or else block or both blocks ,then it is called nested if-else.
+
+1.Use of if-else in if block:-
+if(condition1)
+{
+    if(condition2){
+        //code1
+    }
+    else{
+        //code2
+    }
+}
+else
+{
+    //code3
+}
+2.Use of if-else inside else block:-
+if(condition1)
+{
+//code1
+}
+else
+{
+    if(condition2)
+    {
+    //code2
+    }
+    else
+    {
+        //code3
+    }
+}
+
+3.Use of if-else constructor in both block:-
+if(condition1)
+{
+    if(condition2)
+    {
+        //code1
+    }
+    else
+    {
+        //code2
+    }
+}
+else
+{
+    if(condition3)
+    {
+    //code3
+    }
+    else
+    {
+    //code4
+    }
+}
+
+5.Switch:-Switch is keyword , which works as case control .It is use to create a menu based program.
+
+syntax:
+switch(expression)  //in C language in expression we use only int or char or enum
+                    //in C++ language in expression we use int or char or short or enum or long etc.
+                    //in java language in expression we use only int or char or short or byte or enums orstring.
+{
+case 1:
+//code 1
+break;                      //keywords-switch,case,break,default
+case 2:
+//code 2
+break;              
+case 3:
+//code 3
+break;
+default:
+//code 4
+break:
+}

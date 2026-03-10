@@ -1,0 +1,30 @@
+Rules to declare a variable:-
+1.Keyword is not allowed for variable name.
+2.Special symbols except underscore '_' and spaces are not alloweed in variable name.
+3.variable name can be alphanumeric , but cannot start with number.
+
+Interger-Type
+    -int,char,long,short
+
+Floating Point
+    -float,double,long double
+
+Derived data-Type
+   - arrays ,pointers , structures , unions , enums    
+
+                                                      Memory
+                primary Memory                                                      secondary memory
+                (RAM)                                                               (HDD,memory card ,pendrive)
+                -static RAM  - made-by resister and resister made  by flipflop            
+                -dynamic RAM  - made by capacitor
+
+scanf():-scanf() is a function which is used to take input from user.
+Code Segment:-
+
+int a;
+printf("Enter a number: ")
+scanf("%d",&a);
+float x,y;
+printf("Enter two numbers: ");
+scanf("%f%f",&x,&y);
+

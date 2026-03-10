@@ -1,0 +1,34 @@
+Loop Control ;-IF you have a block a code which you want to execute repeatedly upto given condition is true , then you can use a **loop control**.
+In C language there are three types of loop control;-
+1.While loop 
+2.For loop 
+3.Do-while loop
+
+While:-While is a keyword which works as loop control.The syntax of while loop is given below.
+steps:-
+Initialization of loop counter;
+while(condition){
+    //code
+    update loop counter;
+}
+E.g.,
+int c;
+c=1;
+while(c<=5){
+    printf("%d\n",c);
+    c++;
+}
+
+For:- for is a keyword which works as loop control.The working of for loop is same as while loop, but syntax is different.
+
+for(Initialization of the loop counter; Condition; Update loop counter;)
+{
+    //code
+}
+
+
+Questions:-
+1.WAP ro reverse the number.
+2.WAP to check weather number is Armstrong or not.
+3.WAP to check the wheather number is prime or not.
+4.WAP to print the fibonacci series up to n term.

@@ -1,0 +1,40 @@
+do- while:-do - while is work as exit control.In do - while loop condition is tested after execution of code.Since condition is tested at exit point, so in do - while loop code is excuted at least one time either condtion is true or false.
+ syntax;
+
+Initialization of loop counter;
+do
+{
+    // code
+    update loop counter
+} while (condition);
+
+Array : -Array is the collection of similar data types, that means an array can store multiple values of similar data types.
+
+    Declaration of an Array;
+
+    datatypes arrayname[size];
+
+E.g.,
+    int list[10];
+
+the above array named list can store ten numbers of integer type.
+
+    Initialization of Array : -
+
+                              int list[] = {10, 20, 30, 40, 50};
+
+list[0]=10
+list[1]=20
+list[2]=30      //memory location allocate at compile time
+list[3]=40
+list[4]=50
+
+How to take input from user for an array?
+// code segment(peace of code not a whole code)
+int list[5];
+int i;
+printf("Enter five numbers\n");
+for (i = 0; i < 5; i++)
+{
+    scanf("%d", &list[i]);
+}
