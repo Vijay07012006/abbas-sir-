@@ -1,0 +1,78 @@
+<!DOCTYPE html>            
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to js</title>
+    <script>
+        function fun(){
+           // alert('hellow')
+            let a = document.getElementById('name').value.trim();
+            if(a.length>2 && a.length<30){
+                alert('Valid name')
+            }else{
+              alert('Invalid name')
+            }
+        
+            let b = document.getElementById('adhar').value.trim();
+            if(b.length==12){
+                alert('Valid no')
+            }else{
+              alert('Invalid no')
+            }
+          // console.log(b)
+            
+          let c = document.getElementById('mobile').value.trim();
+            if(c.length==10){
+                alert('Valid no')
+            }else{
+              alert('Invalid no')
+            }
+        }
+    </script>
+</head>
+<body>
+    <form >
+        Enter Name:
+        <input type="text" id="name" >
+        <br>
+        Enter Email:
+        <input type="email" id="email" >
+        <br>
+        <br>
+        date:
+        <input type="date" name="" id="" >
+        <br>
+        color:
+        <input type="color" name="" id="">
+        <br>
+        datetime:
+        <input type="datetime" name="" id="">
+        <br>
+        datetime-local:
+        <input type="datetime-local" name="" id="">
+        <br>
+        checkbox:
+        <input type="checkbox" name="" id="">
+        <br>
+        month:
+        <input type="month" name="" id="">
+        <br>
+       
+        <input type="text" name="" id="">
+        <br>
+        password:
+        <input type="password" name="" id="">
+        <br>
+        Adhar no:
+        <input type="number" id="adhar">
+        <br>
+        mobile no:
+        <input type="number" name="" id="mobile">
+        <br>
+        <input type="file" name="" id="">
+        submit:
+        <input type="submit" onclick="fun()">
+    </form>
+</body>
+</html>

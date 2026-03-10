@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function ch() {
+            //alert('Hello')
+            let name = document.getElementById('name').value.trim();
+            // alert('name')
+            let pname = /^[a-zA-Z ]{2,30}$/
+            let b = pname.test(name)
+            //  console.log(b);
+            if (b == true) {
+                console.log("Valid Name");
+            } else {
+                console.log("Invalid Name");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" name="" id="name">
+    <input type="submit" onclick="ch()">
+    <input type="text" id="email">
+</body>
+
+</html>

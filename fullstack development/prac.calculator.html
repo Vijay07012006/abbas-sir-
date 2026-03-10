@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        #H1{
+            text-align: center;
+            font-size: 50;
+        }
+        #container{
+            width:1000px;
+            height:700px;
+            border: 10px solid black;
+            margin: 0px auto;
+            
+        }
+        #n1{
+            height:100px;
+            width:400px;
+            margin:30px  50px 20px 50px;
+            border:5px solid black;
+            font-size:50px;
+        }
+        #n2{
+            height:100px;
+            width:400px;
+            margin:30px  0px 20px 0px;
+            border:5px solid black;
+            font-size:50px;
+        }
+        #n3{
+            width:880px;
+            height:100px;
+            font-size:30px;
+            margin-left:50px;
+            margin-top:30px;
+            border:5px solid green;
+            background-color:white;
+
+        }
+        #Add{
+            height:80px;
+            width:150px;
+            font-size:20px;
+            border:5px solid rgb(122, 122, 8);
+            margin:100px 30px 0px 50px;
+            background-color: white;
+        }
+        #sub{
+            height:80px;
+            width:150px;
+            font-size:20px;
+            border:5px solid rgb(224, 91, 206);
+            margin:100px 30px 0px 0px;
+            background-color: white;
+        }
+        #div{
+            height:80px;
+            width:150px;
+            font-size:20px;
+            border:5px solid rgb(58, 105, 223);
+            margin:100px 30px 0px 0px;
+            background-color: white;
+        }
+        #mul{
+            height:80px;
+            width:150px;
+            font-size:20px;
+            border:5px solid rgb(206, 21, 21);
+            margin:100px  30px 0px 0px;
+            background-color: white;
+        }
+        #mod{
+            height:80px;
+            width:150px;
+            font-size:20px;
+            border:5px solid rgb(163, 14, 201);
+            margin:100px 30px 0px 0px;
+            background-color: white;
+        }
+    </style>
+    <script>
+        function Result(){
+            //alert("hellow")
+            let n1 = document.getElementById("n1").value;
+          //alert(n1)
+           let n2 = document.getElementById("n2").value;
+           //alert(n2)
+           let a = parseFloat(n1)+parseFloat(n2);
+          document.getElementById('n3').value= "Result:"+a
+        }
+        function Sum(){
+            //alert("sum")
+            let n1 = document.getElementById("n1").value;
+          //alert(n1)
+           let n2 = document.getElementById("n2").value;
+           //alert(n2)
+           let b = parseFloat(n1)+parseFloat(n2);
+        //   document.getElementById('Add').value= "Result:"+b
+          document.getElementById('n3').value= "Result:"+b
+
+        }
+        function sub(){
+            //alert("sum")
+            let n1 = document.getElementById("n1").value;
+          //alert(n1)
+           let n2 = document.getElementById("n2").value;
+           //alert(n2)
+           let c = parseFloat(n1)-parseFloat(n2);
+          //document.getElementById('sub').value= "Result:"+c
+          document.getElementById('n3').value= "Result:"+c
+
+        }
+        function Div(){
+            //alert("sum")
+            let n1 = document.getElementById("n1").value;
+          //alert(n1)
+           let n2 = document.getElementById("n2").value;
+           //alert(n2)
+           let d = parseFloat(n1)/parseFloat(n2);
+         // document.getElementById('div').value= "Result:"+d
+         document.getElementById('n3').value= "Result:"+d
+
+        }
+        function Mul(){
+            //alert("sum")
+            let n1 = document.getElementById("n1").value;
+          //alert(n1)
+           let n2 = document.getElementById("n2").value;
+           //alert(n2)
+           let e = parseFloat(n1)*parseFloat(n2);
+           document.getElementById('n3').value= "Result:"+e
+
+          //document.getElementById('mul').value= "Result:"+e
+        }
+        function Mod(){
+            //alert("sum")
+            let n1 = document.getElementById("n1").value;
+          //alert(n1)
+           let n2 = document.getElementById("n2").value;
+           //alert(n2)
+           let f = parseFloat(n1)%parseFloat(n2);
+          //document.getElementById('mod').value= "Result:"+f
+          document.getElementById('n3').value= "Result:"+f
+          
+
+        }
+    </script>
+</head>
+<body>
+    <h1 id="H1">Calculator</h1>
+    <div id="container">
+    <input type="number" id="n1" >
+    <input type="number" id="n2" >
+    <br>
+    <input  id ="n3" type="text"  value="Result" readonly>
+    <br>
+    <input type="button" id="Add" onclick="Sum()" value="Add">
+    
+    <input type="button" id="sub" onclick="sub()" value="Sub">
+
+    <input type="button" id="div" onclick="Div()" value="Div">
+
+    <input type="button" id="mul" onclick="Mul()" value="Mul">
+
+    <input type="button" id="mod" onclick="Mod()" value="Mod">
+    
+    </div>
+</body>
+</html>

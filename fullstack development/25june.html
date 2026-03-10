@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #h{
+            color: red;
+        }
+    </style>
+    <script>
+        function ch(){
+            // alert('hello')
+            let a = document.getElementById("h")
+            //console.log("a");
+            a.style.backgroundColor="yellow";
+            a.style.color="green";
+            a.innerHTML = "<i>I am fine</i>"
+        //    a.innerText = "<i>I am fine</i>"        /*sirf text par hi laago hogi ye property*/
+            
+        }
+     
+    </script>
+</head>
+<body>
+    <h1 id="h">hellow how are you</h1>
+    <input type="button" value="Check" onclick="ch()">
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(){
+            //alert("ok")
+            let a = /^[a-zA-z ]{2,30}$/
+            let name = document.getElementById("name").value
+            //console.log(name);
+            if (a.test(name)== true){
+                alert("Valid name")
+            }else{
+                alert("Invalid name")
+            }
+        }
+    </script>
+</head>
+<body>
+    Enter Name:
+    <input type="text" name="" id="name">
+    <br>
+    <input type="submit" onclick="fun()">
+</body>
+</html>
